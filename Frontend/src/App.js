@@ -5,7 +5,7 @@ import ChatWindow from './components/ChatWindow';
 import ThreadList from './components/ThreadList';
 import PDFUpload from './components/PDFUpload';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 function App() {
   const [threads, setThreads] = useState([]);
